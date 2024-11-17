@@ -37,12 +37,12 @@ export const BlackRoundButton = ({ children, ...props }) => (
   </Button>
 );
 
-
-  export const GrayRoundButton = ({ children, ...props }) => {
+  export const GrayRoundButton = ({ children, onClick, ...props }) => {
     const [isActive, setIsActive] = useState(false);
 
     const handleClick = () => {
       setIsActive(!isActive);
+      onClick && onClick();
     };
 
     return (

@@ -8,12 +8,16 @@ import {
 } from "../../components/Button/Buttons";
 
 function DevPage() {
+    const handleClick = () => {
+        console.log("Button clicked");
+    }
+
   return (
     <div>
       <WhiteOutlinedRoundButton>View All</WhiteOutlinedRoundButton>
       <WhiteRoundButton>Subscribe to Newsletter</WhiteRoundButton>
       <BlackRoundButton>Shop Now</BlackRoundButton>
-      <GrayRoundButton>Small</GrayRoundButton>
+      <GrayRoundButton onClick={handleClick}>Small</GrayRoundButton>
 
       <WhiteSquaredOutlinedRoundButton>
         <div className="d-flex justify-content-center align-content-center">
