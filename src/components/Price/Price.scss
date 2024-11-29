@@ -1,0 +1,19 @@
+.sale {
+    background-color: rgba(255, 51, 51, 0.1);
+  
+}
+
+.price {
+    width: 200px; /* для мобильных экранов */
+
+  }
+  
+  @media (max-width: 576px) {
+    .price {
+      width: 150px; 
+      font-size: 0.6rem;
+      h2 {
+          font-size: 1.3rem;
+      }
+    }
+  }
